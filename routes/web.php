@@ -1,7 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', 'App\Http\Controllers\FormController@formShow');
+
+Route::get('/', function (){
+    return redirect()->route('pledges.index');
+});
+
+Route::resource('pledges','\App\Http\Controllers\PledgeController');
