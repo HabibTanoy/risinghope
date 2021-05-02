@@ -33,7 +33,7 @@
     .form-text {
         color: #ff824f;
         margin-top: 16px;
-        margin-left: 75px;
+        margin-left: 25%;
     }
     input {
         outline: 0;
@@ -84,6 +84,20 @@
     .forward-faith {
         margin-left:-10px;
     }
+    .input-group-text{
+        color: black;
+        background: none;
+        border: none;
+        font-size: 20px;
+    }
+    input{
+        border: none !important;
+        border-bottom: 1px solid black !important;
+        background: none !important;
+    }
+    input:focus{
+        outline: none !important;
+    }
 </style>
 <body>
 <div class="container-fluid body">
@@ -110,10 +124,10 @@
         <div class="col-md-8">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="form-text text-uppercase font-weight-bold mb-4">my pledge</h1>
+                    <h1 class="form-text text-uppercase font-weight-bold">my pledge</h1>
                 </div>
-                <div class="col-md-6">
-                    {{\Carbon\Carbon::now()->format('M-d')." - Dec, 31, ".\Carbon\Carbon::now()->format('Y')}}
+                <div class="col-md-6 text-right text-uppercase">
+                    <h5 class="mt-4">{{\Carbon\Carbon::now()->format('M-d')." - Dec, 31, ".\Carbon\Carbon::now()->format('Y')}}</h5>
                 </div>
             </div>
             @include("pledge.form.fields")
