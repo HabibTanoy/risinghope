@@ -21,7 +21,7 @@
         background-size: cover;
     }
     .qr {
-        margin-top:220px;
+        margin-top:118px;
     }
     .div-form {
         text-align: center;
@@ -98,6 +98,12 @@
     input:focus{
         outline: none !important;
     }
+    .color {
+        color: #ff824f;
+        line-height: 7px;
+        margin-top: -15px;
+        font-size: 20px
+    }
 </style>
 <body>
 <div class="container-fluid body">
@@ -106,6 +112,14 @@
             <div>
                 <img src="{{\Illuminate\Support\Facades\URL::to('logo.png')}}" alt="Italian Trulli" height ="200px">
             </div>
+            <div class="font-weight-bold color ml-4">
+                <p>"Now to him</p>
+                <p>who is able to do</p>
+                <p>immeasurably more than all we</p>
+                <p>ask or imagine, according to his</p>
+                <p>power that is at work within us."</p>
+            </div>
+            <span class="color ml-4">Eph 3:20</span>
             <div class="row qr">
                 <div class="col-md-6">
                     <img src="{{\Illuminate\Support\Facades\URL::to('qr.png')}}" alt="">
