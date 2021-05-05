@@ -1,12 +1,22 @@
 <div class="row">
     <div class="col-md-10">
-        @if ($errors->any())
-            <div class="alert">
-                <ul>
-                    <li class="text-danger">{{ $errors->first() }}</li>
-                </ul>
-            </div>
-        @endif
+        <div class="ml-5">
+            @if ($errors->any())
+                <div class="alert">
+                    <ul>
+                        <li class="text-danger">{{ $errors->first() }}</li>
+                    </ul>
+                </div>
+            @endif
+
+            @if (\Session::has('success'))
+                <div class="alert">
+                    <ul>
+                        <li class="text-success">{!! \Session::get('success') !!}</li>
+                    </ul>
+                </div>
+            @endif
+        </div>
 
         <div class="row">
             <div class="col-md-12">

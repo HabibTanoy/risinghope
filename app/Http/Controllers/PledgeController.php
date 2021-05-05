@@ -59,6 +59,7 @@ class PledgeController extends Controller
                 "description" => $request->description,
                 "total" => $request->total,
             ]);
+            return redirect()->back()->with('success','Recorded successfully');
         }catch (\Exception $exception){
             return redirect()->back()->withErrors($exception->getMessage());
         }
