@@ -1,0 +1,37 @@
+
+@media (max-width: 767.98px) {
+    .form-edit {
+        margin-left: 0px !important;
+    }
+    .form-text {
+        text-align: center;
+    }
+    .color {
+        line-height: 22px !important;
+        margin-top: -3px !important;
+        font-size: 24px !important;
+    }
+    p {
+        margin-bottom: 0.6rem;
+        line-height: 28px;
+    }
+    .qr-image {
+        display: none;
+    }
+    .qr-text {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 15px;
+    } 
+    .way {
+        font-size: 32px !important;
+        line-height: 38px;
+    }
+    .for-text {
+        padding-bottom: 7px;
+    }
+    .btn-edit {
+        text-align: center;
+    }
+}
+

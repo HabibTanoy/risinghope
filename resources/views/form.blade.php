@@ -8,11 +8,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
     <title>form</title>
 </head>
 <style>
     .body {
-        background-image: url('image.png');
+        background-image: url('image/image.png');
         height: 100%;
 
         /* Center and scale the image nicely */
@@ -20,6 +23,10 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    img {
+        width: 100%;
+        height: auto;
+      }
     .qr {
         margin-top:118px;
     }
@@ -33,7 +40,11 @@
     .form-text {
         color: #ff824f;
         margin-top: 16px;
-        margin-left: 25%;
+        margin-left: 10%;
+    }
+    .form-edit {
+        margin-left:30px; 
+        font-size: 20px
     }
     input {
         outline: 0;
@@ -110,7 +121,7 @@
     <div class="row">
         <div class="col-md-4">
             <div>
-                <img src="{{\Illuminate\Support\Facades\URL::to('logo.png')}}" alt="Italian Trulli" height ="200px">
+                <img src="{{\Illuminate\Support\Facades\URL::to('image/logo.png')}}" alt="Italian Trulli" height ="200px">
             </div>
             <div class="font-weight-bold color ml-4">
                 <p>"Now to him</p>
@@ -122,15 +133,15 @@
             <span class="color ml-4">Eph 3:20</span>
             <div class="row qr">
                 <div class="col-md-6">
-                    <img src="{{\Illuminate\Support\Facades\URL::to('qr.png')}}" alt="">
+                    <img class="qr-image" src="{{\Illuminate\Support\Facades\URL::to('image/qr.png')}}" alt="">
                 </div>
-                <div class="col-md-6">
-                    <p class="way mt-4 mb-0 text-uppercase font-weight-bold">ways</p>
-                    <p class="way mb-0 text-uppercase font-weight-bold">to give:</p>
-                    <p class="mb-0">Website</p>
-                    <p class="mb-0">Check/Cash</p>
-                    <p class="mb-0">planned Giving</p>
-                    <p class="mb-0">Text 2 Give:Text 84321</p>
+                <div class="col-md-6 qr-text">
+                    <p class="way for-text mt-4 mb-0 text-uppercase font-weight-bold">ways</p>
+                    <p class="way for-text mb-0 text-uppercase font-weight-bold">to give:</p>
+                    <p class="mb-0 for-text">Website</p>
+                    <p class="mb-0 for-text">Check/Cash</p>
+                    <p class="mb-0 for-text">planned Giving</p>
+                    <p class="mb-0 for-text">Text 2 Give:Text 84321</p>
                     <p><<< Scan Me</p>
                 </div>
             </div>

@@ -20,7 +20,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <form action="{{route('pledges.store')}}" style="margin-left:92px; font-size: 20px" method="POST">
+                <form action="{{route('pledges.store')}}" class="form-edit" method="POST">
                     {{csrf_field()}}
                     <div class="input-group mb-1">
                         <div class="input-group-prepend">
@@ -78,7 +78,7 @@
 
                     <div class="input-group mb-1">
                         <div class="input-group-prepend">
-                    <span class="input-group-text">
+                    <span class="ml-2 mt-2">
                         I/We wish to give to "Forward in Faith" by means of a gift other then cash.
                     </span>
                         </div>
@@ -96,14 +96,14 @@
                         <input type="text" class="form-control" name="total">
                     </div>
                     <br>
-                    <div class="input-group mb-1">
+                    <div class="mb-3 btn-edit">
                         <button class="btn"
                                 type="submit"
                                 style="background-color: #e86638;color: white;width: 30%">SUBMIT
                         </button>
                     </div>
 
-                    <div class="input-group mb-1">
+                    <div class="mb-1 btn-edit">
                         <small class=" mt-4">1500 W Cowing Dr. Munic, IN 47304 <br>
                             Phone: 765-744-6292 . RisingHopeChurch.com <br>
                             mhewitt@RisingHopeChurch.com</small>
